@@ -17,6 +17,13 @@ vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 
 vim.keymap.set("n", "Q", "<nop>")
+vim.keymap.set("n", "q", "<nop>")
 vim.keymap.set("n", "<leader>f", function()
     vim.lsp.buf.format()
 end)
+
+vim.keymap.set("t", "<esc>", "<C-\\><C-n>")
+vim.keymap.set("n", "<leader>t", ":split <bar> resize 15 <bar> term<CR>")
+
+vim.keymap.set("n", "<leader>bb", vim.cmd.bn)
+vim.keymap.set("n", "<leader>bB", vim.cmd.bp)
